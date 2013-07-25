@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/callerIDLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="(805) 555-1212"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
+    
+    <TextView
+        android:id="@+id/transcriptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/callerIDLabel"
+        android:layout_below="@+id/callerIDLabel"
+        android:layout_marginTop="5dp"
+        android:maxLength="45"
+        android:text="Text to speech is here and goes on and on, requiring a length limit to prevent wrapping"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/transcriptionLabel"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="19dp"
+        android:text="3/11/12"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#4444F0" />
+
+</RelativeLayout>

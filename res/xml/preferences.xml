@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:_="http://schemas.android.com/apk/res/android">
+    
+    <EditTextPreference _:defaultValue=""
+        							_:title="Username" _:dialogTitle="Username"
+        							_:key="username"
+        							_:dialogMessage="Autofills this field in the login screen."/>
+    
+</PreferenceScreen>

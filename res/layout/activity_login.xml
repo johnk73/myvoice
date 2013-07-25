@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myvoice_gradient" >
+
+    <TextView
+        android:id="@+id/logoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/myvoice"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:textSize="64sp"/>
+
+    <TextView
+        android:id="@+id/usernameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/logoLabel"
+        android:layout_below="@+id/logoLabel"
+        android:layout_marginTop="40dp"
+        android:text="@string/phone_number"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameLabel"
+        android:layout_below="@+id/usernameLabel"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:inputType="phone"
+
+        >           <!-- android:text="8052337554" -->
+        <requestFocus />
+    </EditText>
+   
+    <CheckBox
+        android:id="@+id/rememberMeCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/passwordLabel"
+        android:layout_below="@+id/usernameEditText"
+        android:text="@string/remember" />
+
+    <TextView
+        android:id="@+id/passwordLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameLabel"
+        android:layout_below="@+id/rememberMeCheckBox"
+        android:layout_marginTop="10dp"
+        android:text="@string/password"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/usernameEditText"
+        android:layout_below="@+id/passwordLabel"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+
+         />         <!--  android:text="bogus" -->
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/button_background"
+        android:onClick="onLoginButtonClick"
+        android:text="@string/login"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoLabel"
+        android:layout_centerHorizontal="true"
+        android:maxLength="25"
+        android:maxWidth="300dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#A02222" />
+    
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/usernameLabel"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">myVoice</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_login">myVoice</string>
+    <string name="title_activity_inbox">Inbox</string>
+    <string name="myvoice">myVoice</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="cannot_connect_">"Cannot connect: "</string>
+    <string name="field_is_empty">Field is empty</string>
+    <string name="base_url">https://www.evoice.com/evoice-api/</string>
+    <string name="login_url">login/authenticateUser?keepAutoLogin=true&amp;phone_and_extension=USERNAME&amp;user_password=PASSWORD</string>
+    <string name="inbox_url">accountData/listMessages?did=USERNAME&amp;folder=Inbox&amp;start=0&amp;limit=15&amp;showV2T=true&amp;sort=Date&amp;dir=DESC</string>
+    <string name="message_url">accountData/getVoiceMail?folderName=Voice%20Inbox&amp;messageID=IDENTITY</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="caller_id">Caller ID:</string>
+    <string name="date_received">Date Received:</string>
+    <string name="duration">Duration:</string>
+    <string name="message">Message:</string>
+    <string name="play">Play</string>
+    <string name="remember">Remember</string>
+</resources>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/myvoice_gradient" >
+    
+    <TextView
+        android:id="@+id/errorMessageInbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:maxLength="25"
+        android:maxWidth="300dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#A02222" />
+
+    <ListView
+        android:id="@+id/inboxListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/errorMessageInbox"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/myvoice_gradient"
+        tools:listitem="@layout/listview_message" >
+
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBarInbox"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>
